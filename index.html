@@ -4,29 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025 RJOS Poster</title>
-    <link rel="stylesheet" href="revealjs/dist/reveal.css">
-    <link rel="stylesheet" href="revealjs/dist/theme/white.css">
+    <link rel="stylesheet" href="./revealjs/dist/reveal.css">
+    <link rel="stylesheet" href="./revealjs/dist/theme/white.css">
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
             <section>
-                <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/qompassai/r4r/main/r4r.pptx" 
-                    width="100%" 
-                    height="600px" 
+                <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/qompassai/r4r/main/r4r.pptx"
+                    width="100%"
+                    height="600px"
                     frameborder="0">
                 </iframe>
             </section>
         </div>
     </div>
-    <script src="revealjs/dist/reveal.js"></script>
+    <script src="./revealjs/dist/reveal.js"></script>
+    <script src="./revealjs/plugin/notes/notes.js"></script>
+    <script src="./revealjs/plugin/markdown/markdown.js"></script>
+    <script src="./revealjs/plugin/highlight/highlight.js"></script>
     <script>
         Reveal.initialize({
+            hash: true,
             width: "100%",
             height: "100%",
             margin: 0,
             minScale: 1,
-            maxScale: 1
+            maxScale: 1,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
         });
     </script>
 </body>
