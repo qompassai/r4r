@@ -158,9 +158,10 @@ Where:
 
 ### Q: Do I have to buy a Linux computer to use this? I don't have time for that!
 ### A: No. You can run Linux and/or the tools we share alongside your existing operating system:
-    * Windows users can use Windows Subsystem for Linux [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-    * Mac users can use [Homebrew](https://brew.sh/)
-    * The code-base instructions were developed with both beginners and advanced users in mind.
+    
+* Windows users can use Windows Subsystem for Linux [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+* Mac users can use [Homebrew](https://brew.sh/)
+* The code-base instructions were developed with both beginners and advanced users in mind.
 
 ### Q: Do you have to get a masters in AI?
 ### A: Not if you don't want to. To get competent enough to get past ChatGPT dependence at least, you just need a computer and a beginning's mindset. Huggingface is a good place to start. 
