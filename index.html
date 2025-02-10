@@ -2,11 +2,61 @@
 <html>
 <head>
     <title>RJOS Presentation</title>
+    <!-- MathJax Configuration -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$','$'], ['\\(','\\)']],
+                displayMath: [['$$','$$'], ['\\[','\\]']],
+                processEscapes: true
+            },
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" }
+            }
+        });
+    </script>
+    <!-- Load MathJax -->
     <script type="text/javascript" async
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 </head>
 <body>
+    <!-- Your Agentic AI Layers content goes here -->
+    <div class="content">
+    
+    <h3>AI Math at a glance</h3>
+    
+    <h2>Forward Propagation Algorithm</h2>
+    <div class="equation">
+        $$y = w_1x_1 + w_2x_2 + ... + w_nx_n + b$$
+    </div>
+    
+    <p>Where:</p>
+    <ul>
+        <li>$y$ represents the model output</li>
+        <li>$(x_1, x_2, ..., x_n)$ are input features</li>
+        <li>$(w_1, w_2, ..., w_n)$ are feature weights</li>
+        <li>$b$ is the bias term</li>
+    </ul>
+
+    <h3>Neural Network Activation</h3>
+    <p>For neural networks, the bias term is incorporated before activation:</p>
+    
+    <div class="equation">
+        $$z = \sum_{i=1}^{n} w_ix_i + b$$
+        $$a = \sigma(z)$$
+    </div>
+
+    <p>Where:</p>
+    <ul>
+        <li>$z$ is the weighted sum plus bias</li>
+        <li>$a$ is the activation output</li>
+        <li>$\sigma$ is the activation function</li>
+    </ul>
+</div>
+
+    </div>
+
     <iframe 
         src="https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/qompassai/r4r/main/r4r.pptx"
         width="100%" 
@@ -15,4 +65,5 @@
     </iframe>
 </body>
 </html>
+
 
