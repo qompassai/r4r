@@ -135,7 +135,7 @@ Where:
 ### How is it $0 cost?
 
 * We self-host models and we thoughtfully implement open source software and write our own code. All hardware was already purchased prior to the grant being awarded.
-* We public-source the code-bases under dual-license at no cost to learners or educators.
+* We public-source the code-bases under dual-license at no cost to learners or educators not intending on enterprise-grade commercial use.
 * We make efficient use of our free memberships to the NVIDIA, Meta, Groq, and Github developer programs
 
 ### Q: Do I have to buy a Linux computer to use this? I don't have time for that!
