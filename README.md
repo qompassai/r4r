@@ -20,67 +20,101 @@ In response to noticeably increasing cost of AI medical education, our study foc
 
 ### Results
 
-
+* Education
 
 [Equitable Open AI Curriculum](https://github.com/qompassai/Equator)
-
-[NIST-compliant Security solutions](https://github.com/qompassai/Nautilus)
-
-[Quality AI Deployment Solutions](https://github.com/qompassai/Sojourn)
-
-[Quality AI MicroServer Solutions](https://github.com/qompassai/WaveRunner)
-
 [R3 | Open-Weight Small MultiModal Finetune of LLaMA3](https://huggingface.co/r3)
 
+* Safety
+
+[Safety guardrails via NIST AI Risk Management Framework ](https://github.com/qompassai/Nautilus/blob/main/RedTeam/RedAI/NIST/AI_RMF_Playbook.pdf)
+[Dioptra | One NIST-endorsed tool in our purple evaluation process](https://github.com/qompassai/Nautilus/tree/main/RedTeam/RedAI/NIST/Qompass_Dioptra)
 [Kyber Odyssey- Post Quantum Cryptography to secure legacy software & AI deployment](https://github.com/qompassai/KO)
 
+* Use-Cases
+
 [AI Data Management Protocol Walkthrough](https://www.youtube.com/watch?v=T-XGHgaJIPU&t=234s)
-
 [Ollie | Small Multimodal Model with Web Search Tool Calling](https://www.youtube.com/watch?v=OvxrfwC3CKY&t=9s)
-
 [Valle | SMM for MultiLingual Patient Education](https://www.youtube.com/watch?v=q-2EL-ajNKc&t=8s)
 
 
 #FAQ
 
+*Q: How would you describe AI to someone who's "not technical"?
+*A: We dislike identifying people as technical or not technical. This kind language is othering and unkind. AI is like cake, not all cakes are created equal, but they can all be great in their own ways.
+
+Yann Lecunn, Chief AI 
+
+### AI As Cake Left-most image of poster)
+
+The AI Layer Cake: From Foundation to Frosting
+Base Layer (The Cake Foundation)
+LLM Layer: Like the basic cake batter, providing fundamental reasoning and adaptability
+RAG Components: Similar to adding essential ingredients like flour and eggs, enriching the base with fact-checking and knowledge retrieval
+Knowledge Base: Acts as the leavening agents, helping the AI "rise" with contextual understanding and domain expertise
+Middle Layers (The Filling)
+Ethics & Safety Layer: Like food safety measures in baking, ensuring the "cake" is safe for consumption through:
+Privacy protection (food handling standards)
+Harm prevention (quality control)
+Bias detection (taste testing)
+Interaction Interface: Similar to the filling between cake layers:
+Multi-modal support (different textures and flavors)
+User input processing (mixing ingredients properly)
+Personalization (custom flavor combinations)
+Upper Layers (The Structure)
+External Interactions: Like adding structural supports:
+API integrations (binding ingredients)
+Automated workflows (consistent baking processes)
+Real-time decision making (temperature control)
+Operational Independence: Similar to a master baker's expertise:
+Self-learning (recipe refinement)
+Autonomous decisions (knowing when the cake is done)
+Scalability (adjusting recipe quantities)
+Top Layer (The Decoration)
+Governance & Auditability: Like the final decorative touches:
+Transparent decision logs (recipe documentation)
+Regulatory compliance (food safety certification)
+Explainability (ingredient listing)
 * Q: How do you mitigate against bias?
 
  A: "We delineate between mathematical bias (MB) - a fundamental parameter in neural network equations - and algorithmic/social bias (ASB). While MB is optimized during model training through backpropagation, ASB requires careful consideration of data sources, model architecture, and deployment strategies. We implement attention mechanisms for improved input processing and use legal open-source data and secure web-search APIs to help mitigate ASB."
 
+ [One way to align AI against ASB](https://www.aamc.org/about-us/mission-areas/medical-education/principles-ai-use)
+
  ## MB at a glance
 
 ```bash
-$$ y = w_1x_1 + w_2x_2 + ... + w_nx_n + b $$
+$y = w_1x_1 + w_2x_2 + ... + w_nx_n + b$
 
 Where:
-- $$ y $$ represents the model output
-- $$ x_1, x_2, ..., x_n $$ are input features
-- $$ w_1, w_2, ..., w_n $$ are feature weights
-- $$ b $$ is the bias term that shifts output independently
+$y$ represents the model output
+$(x_1, x_2, ..., x_n)$ are input features
+$(w_1, w_2, ..., w_n)$ are feature weights
+$b$ is the bias term
 ```
 For neural networks, the bias term is incorporated before activation:
 
 ```bash
-$$ z = \sum_{i=1}^{n} w_ix_i + b $$
-$$ a = \sigma(z) $$
+$ z = \sum_{i=1}^{n} w_ix_i + b $$
+$ a = \sigma(z) $$
 
 Where:
-- $$ z $$ is the weighted sum plus bias
-- $$ a $$ is the activation output
-- $$ \sigma $$ is the activation function
+- $ z $ is the weighted sum plus bias
+- $ a $ is the activation output
+- $ \sigma $ is the activation function
 ```
 
 The attention mechanism equation is:
 
 ```bash
-$$ \text{Attention}(Q,K,V) = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V $$
+$ \text{Attention}(Q,K,V) = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V $$
 
 Where:
-- $$ Q $$ represents Query matrix
-- $$ K $$ represents Key matrix
-- $$ V $$ represents Value matrix
-- $$ d_k $$ is the dimension of the key vectors
-- $$ \text{softmax}(\cdot) $$ normalizes scores to sum to 1
+- $ Q $ represents Query matrix
+- $ K $ represents Key matrix
+- $ V $ represents Value matrix
+- $ d_k $ is the dimension of the key vectors
+- $ \text{softmax}(\cdot) $ normalizes scores to sum to 1
 ```
 
 # How is it $0 cost?
