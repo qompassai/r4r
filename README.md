@@ -90,46 +90,56 @@ In response to noticeably increasing cost of AI medical education, our study foc
 
  [AAMC AI Guidelines | One way to align AI against ASB](https://www.aamc.org/about-us/mission-areas/medical-education/principles-ai-use)
 
- ### MB at a glance
+ ### AI Math at a glance
 
-```bash
+
 ## Forward Propagation Algorithm
-\[y = w_1x_1 + w_2x_2 + ... + w_nx_n + b\]
+
+$$
+y = w_1x_1 + w_2x_2 + ... + w_nx_n + b
+$$
 
 Where:
-- \(y\) represents the model output
-- \((x_1, x_2, ..., x_n)\) are input features
-- \((w_1, w_2, ..., w_n)\) are feature weights
-- \(b\) is the bias term
-```
+
+- $y$ represents the model output
+- $(x_1, x_2, ..., x_n)$ are input features
+- $(w_1, w_2, ..., w_n)$ are feature weights
+- $b$ is the bias term
 
 ### Neural Network Activation
 
-```bash
 For neural networks, the bias term is incorporated before activation:
 
-\[z = \sum_{i=1}^{n} w_ix_i + b\]
-\[a = \sigma(z)\]
+$$
+z = \sum_{i=1}^{n} w_ix_i + b
+$$
+
+$$
+a = \sigma(z)
+$$
 
 Where:
-- \(z\) is the weighted sum plus bias
-- \(a\) is the activation output
-- \(\sigma\) is the activation function
-```
+
+- $z$ is the weighted sum plus bias
+- $a$ is the activation output
+- $\sigma$ is the activation function
+
 
 ### Attention Mechanism
 
-```bash
 The attention mechanism equation is:
 
-\[\text{Attention}(Q,K,V) = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V\]
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left( \frac{QK^T}{\sqrt{d_k}} \right) V
+$$
 
 Where:
-- \(Q\) represents Query matrix
-- \(K\) represents Key matrix
-- \(V\) represents Value matrix
-- \(d_k\) is the dimension of the key vectors
-- \(\text{softmax}(\cdot)\) normalizes scores to sum to 1
+
+- $Q$ represents the Query matrix
+- $K$ represents the Key matrix
+- $V$ represents the Value matrix
+- $d_k$ is the dimension of the key vectors
+- $\text{softmax}(\cdot)$ normalizes scores to sum to 1
 ```
 
 ### How is it $0 cost?
