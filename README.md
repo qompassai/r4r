@@ -1,13 +1,15 @@
 # The Responsible Open Science Engine: Powering Minimally Invasive AI for Mentorship
+
 ## Authors
-
 Matthew A. Porter, BSc<sup>1</sup>, Ariana Rowshan, BA<sup>2</sup>, Dawn L. Laporte, MD<sup>2</sup>, Amiethab A. Aiyer, MD<sup>2</sup>
-
 
 <sup>1</sup>Qompass AI, Spokane, WA  
 <sup>2</sup>The Johns Hopkins University School of Medicine, Department of Orthopaedic Surgery, Baltimore, MD
 
-[2025 RJOS Poster](./r4r.pptx)
+# 2025 RJOS Poster
+
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/qompassai/r4r/main/r4r.pptx" width="100%" height="600px" frameborder="0"></iframe>
+
 
 
 ## Abstract
@@ -49,7 +51,7 @@ In response to noticeably increasing cost of AI medical education, our study foc
 ## **AI As Cake From Top to Bottom**
 
 **Referencing the left most image in the poster**
-[2025 RJOS Poster](./r4r.pptx)
+<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/qompassai/r4r/main/r4r.pptx" width="100%" height="600px" frameborder="0"></iframe>
 ### Governance & Auditability (The Decorative Frosting)
 - **Transparent Decision Logs**: Like a recipe book recording each step of the baking process
 - **Regulatory Compliance**: Following food safety standards and baking regulations
