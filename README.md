@@ -50,7 +50,7 @@ In response to noticeably increasing cost of AI medical education, our study foc
 # FAQ
 
 ### Q: How would you describe AI to someone who's "not technical"?
-### A: We dislike identifying people as technical or not technical. This sort of language language is othering and unkind. AI is like cake, not all cakes are created equal, but they can all be great in their own ways. Yann LeCun, Turing Award winner, Meta's Chief AI Scientist a professor at NYU,simplified the complex world of AI by comparing it to a layered cake.
+### A: We dislike identifying people as technical or not technical. This sort of language language is othering and unkind. AI is like cake, not all cakes are created equal, but they can all be great in their own ways. Yann LeCun, Turing Award winner, Meta's Chief AI Scientist and a professor at NYU simplified the complex world of AI by comparing it to a layered cake. We endeavor to do the same :)
 
 ## **AI As Cake From Top to Bottom**
 
