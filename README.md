@@ -1,7 +1,7 @@
 # The Responsible Open Science Engine: Powering Minimally Invasive AI for Mentorship
 ## Authors
 
-Matt A. Porter, B.Sc<sup>1</sup>, Ariana R. Rowshan, BA<sup>2</sup>, Dawn L. Laporte, MD<sup>2</sup>, Amiethab A. Aiyer, MD<sup>2</sup>
+Matthew A. Porter, BSc<sup>1</sup>, Ariana Rowshan, BA<sup>2</sup>, Dawn L. Laporte, MD<sup>2</sup>, Amiethab A. Aiyer, MD<sup>2</sup>
 
 
 <sup>1</sup>Qompass AI, Spokane, WA  
@@ -15,7 +15,7 @@ However, the swift adoption of AI technologies has highlighted significant ethic
 
 
 ### Methods
-In response to noticeably increasing cost of AI medical education, our study focuses on the deployment of quantized, small-scale AI models on-device. This approach aims to ensure accessibility and equity, particularly for underfunded institutions and learners from non-traditional, disabled, and underepresented minority populations. We began by selecting open-source AI models renowned for their efficacy in educational contexts. To optimize these models for deployment on resource-constrained hardware, we employed quantization techniques, which reduce the precision of the model's parameters, thereby decreasing memory usage and computational demands without significantly compromising performance. Our deployment environment comprised consumer-grade Linux computers, reflecting hardware commonly available in underserved regions. We utilized standard Linux distributions, ensuring all software dependencies were met. To enhance computational efficiency, we leveraged NVIDIA's Compute Unified Device Architecture (CUDA 12.8) for on-device acceleration, enabling the models to utilize available GPU resources. The quantized models were integrated into the system in transient sandboxed enviromments as well as via hard-coded web-based application program interfaces (APIs)  to streamline deployment and ensure consistency across various infrastructures.
+In response to noticeably increasing cost of AI medical education, our study focuses on the deployment of quantized, small-scale AI models on-device. This approach aims to ensure accessibility and equity, particularly for underfunded institutions and learners from non-traditional, disabled, and underrepresented minority populations. We began by selecting open-source AI models renowned for their efficacy in educational contexts. To optimize these models for deployment on resource-constrained hardware, we employed quantization techniques, which reduce the precision of the model's parameters, thereby decreasing memory usage and computational demands without significantly compromising performance. Our deployment environment comprised consumer-grade Linux computers, reflecting hardware commonly available in underserved regions. We utilized standard Linux distributions, ensuring all software dependencies were met. To enhance computational efficiency, we leveraged NVIDIA's Compute Unified Device Architecture (CUDA 12.8) for on-device acceleration, enabling the models to utilize available GPU resources. The quantized models were integrated into the system in transient sandboxed environments as well as via hard-coded web-based application program interfaces (APIs)  to streamline deployment and ensure consistency across various infrastructures.
 
 
 ### Results
@@ -171,14 +171,14 @@ The AGPL-3.0 license ensures that any modifications to the software remain open 
 
 ### Addressing Cybersecurity in Critical Sectors
 
-The commercial license option allows for tailored solutions in critical sectors such as healthcare, which has seen significant impacts from cyberattacks. For example, the recent Change Healthcare attack[^2] affected millions of Americans and caused widespread disruption for hospitals and other providers. In January 2025, CISA and FDA jointly warned of critical backdoor vulnerabilities in Contec CMS8000 patient monitors, revealing how medical devices could be compromised for unauthorized remote access and patient data manipulation[^7,^8]
+The commercial license option allows for tailored solutions in critical sectors such as healthcare, which has seen significant impacts from cyberattacks. For example, the recent Change Healthcare attack[^2] affected millions of Americans and caused widespread disruption for hospitals and other providers. In January 2025, CISA[^7] and FDA[^8] jointly warned of critical backdoor vulnerabilities in Contec CMS8000 patient monitors, revealing how medical devices could be compromised for unauthorized remote access and patient data manipulation.
 ### Supporting Cybersecurity Awareness
 
-The dual licensing model supports initiatives like theCybersecurity and Infrastructure Security Agency (CISA) efforts to improve cybersecurity awareness[^3] in "target rich" sectors, including K-12 education. By allowing both open-source and commercial use, we aim to facilitate the development of tools that support these critical awareness and protection efforts.
+The dual licensing model supports initiatives like the Cybersecurity and Infrastructure Security Agency (CISA) efforts to improve cybersecurity awareness[^3] in "target rich" sectors, including K-12 education. By allowing both open-source and commercial use, we aim to facilitate the development of tools that support these critical awareness and protection efforts.
 
 ### Bridging the Digital Divide
 
-The unfortunate reality is that a number of individuals and organizations have gone into a frenzy in every facet of our daily lives[^4]. These unfortunate folks identify themselves with their talk of "10X" returns and building towards Artificial General Intelligence aka "AGI" whiel offering GPT wrappers. Our dual licensing approach aims to acknkowledge this deeply concerning predatory paradigm witih clear eyes while still doing operating to bring the best parts of the open-source community with our services and solutions.
+The unfortunate reality is that a number of individuals and organizations have gone into a frenzy in every facet of our daily lives[^4]. These unfortunate folks identify themselves with their talk of "10X" returns and building towards Artificial General Intelligence aka "AGI" while offering GPT wrappers. Our dual licensing approach aims to acknowledge this deeply concerning predatory paradigm with clear eyes while still doing operating to bring the best parts of the open-source community with our services and solutions.
 
 ### Recent Cybersecurity Attacks
 
