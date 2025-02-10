@@ -28,7 +28,7 @@ In response to noticeably increasing cost of AI medical education, our study foc
 
 [Equitable Open AI Curriculum](https://github.com/qompassai/Equator)
 
-[R3 | Open-Weight Small MultiModal Finetune of LLaMA3](https://huggingface.co/r3)
+[R3 | Open-Weight Small MultiModal Finetune of LLaMA3](https://huggingface.co/qompass/r3)
 
 * Safety
 
