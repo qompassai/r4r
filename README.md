@@ -110,7 +110,9 @@ Where:
 - $(w_1, w_2, ..., w_n)$ are feature weights
 - $b$ is the bias term
 ### Neural Network Activation
+
 For neural networks, the bias term is incorporated before activation:
+
 $$
 z = \sum_{i=1}^{n} w_ix_i + b
 $$
