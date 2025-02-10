@@ -98,10 +98,13 @@ In response to noticeably increasing cost of AI medical education, our study foc
  ### AI Math at a glance
 
 ## Forward Propagation Algorithm
+
 $$
 y = w_1x_1 + w_2x_2 + ... + w_nx_n + b
 $$
+
 Where:
+
 - $y$ represents the model output
 - $(x_1, x_2, ..., x_n)$ are input features
 - $(w_1, w_2, ..., w_n)$ are feature weights
@@ -114,16 +117,19 @@ $$
 $$
 a = \sigma(z)
 $$
+
 Where:
 - $z$ is the weighted sum plus bias
 - $a$ is the activation output
 - $\sigma$ is the activation function
+
 ### Attention Mechanism- aka what makes the Transformer (The "T" in ChatGPT) powerful
 
 [Attention High level overview video](https://www.youtube.com/watch?v=fjJOgb-E41w)
 [Attention Is All You Need Arxiv Paper](https://arxiv.org/abs/1706.03762)
 
 The attention mechanism equation is:
+
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left( \frac{QK^T}{\sqrt{d_k}} \right) V
 $$
