@@ -130,10 +130,11 @@ Where:
 
 ### Attention Mechanism- aka what makes the Transformer (The "T" in ChatGPT) powerful
 
-[Attention High level overview video](https://www.youtube.com/watch?v=fjJOgb-E41w)
-[Attention Is All You Need Arxiv Paper](https://arxiv.org/abs/1706.03762)
+* [Attention High level overview video](https://www.youtube.com/watch?v=fjJOgb-E41w)
 
-The attention mechanism equation is:
+* [Attention Is All You Need Arxiv Paper](https://arxiv.org/abs/1706.03762)
+
+The Attention mechanism equation is:
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left( \frac{QK^T}{\sqrt{d_k}} \right) V
