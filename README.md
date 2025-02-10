@@ -40,88 +40,110 @@ In response to noticeably increasing cost of AI medical education, our study foc
 
 #FAQ
 
-*Q: How would you describe AI to someone who's "not technical"?
-*A: We dislike identifying people as technical or not technical. This kind language is othering and unkind. AI is like cake, not all cakes are created equal, but they can all be great in their own ways.
+## Q: How would you describe AI to someone who's "not technical"?
+## A: We dislike identifying people as technical or not technical. This kind language is othering and unkind. AI is like cake, not all cakes are created equal, but they can all be great in their own ways. Yann LeCun, Turing Award winner, Meta's Chief AI Scientist a professor at NYU,simplified the complex world of AI by comparing it to a layered cake.
 
-Yann Lecunn, Chief AI 
+### **AI As Cake From Top to Bottom**
 
-### AI As Cake Left-most image of poster)
+## Governance & Auditability (The Decorative Frosting)
+- **Transparent Decision Logs**: Like a recipe book recording each step of the baking process
+- **Regulatory Compliance**: Following food safety standards and baking regulations
+- **Explainability**: Like listing ingredients and nutritional information on the box
 
-The AI Layer Cake: From Foundation to Frosting
-Base Layer (The Cake Foundation)
-LLM Layer: Like the basic cake batter, providing fundamental reasoning and adaptability
-RAG Components: Similar to adding essential ingredients like flour and eggs, enriching the base with fact-checking and knowledge retrieval
-Knowledge Base: Acts as the leavening agents, helping the AI "rise" with contextual understanding and domain expertise
-Middle Layers (The Filling)
-Ethics & Safety Layer: Like food safety measures in baking, ensuring the "cake" is safe for consumption through:
-Privacy protection (food handling standards)
-Harm prevention (quality control)
-Bias detection (taste testing)
-Interaction Interface: Similar to the filling between cake layers:
-Multi-modal support (different textures and flavors)
-User input processing (mixing ingredients properly)
-Personalization (custom flavor combinations)
-Upper Layers (The Structure)
-External Interactions: Like adding structural supports:
-API integrations (binding ingredients)
-Automated workflows (consistent baking processes)
-Real-time decision making (temperature control)
-Operational Independence: Similar to a master baker's expertise:
-Self-learning (recipe refinement)
-Autonomous decisions (knowing when the cake is done)
-Scalability (adjusting recipe quantities)
-Top Layer (The Decoration)
-Governance & Auditability: Like the final decorative touches:
-Transparent decision logs (recipe documentation)
-Regulatory compliance (food safety certification)
-Explainability (ingredient listing)
-* Q: How do you mitigate against bias?
+## Operational Independence (The Master Baker's Expertise)
+- **Self-Learning**: Like perfecting recipes through practice and feedback
+- **Autonomous Decisions**: Knowing when the cake is done without using a timer
+- **Scalability**: Adjusting recipe portions for different serving sizes
 
- A: "We delineate between mathematical bias (MB) - a fundamental parameter in neural network equations - and algorithmic/social bias (ASB). While MB is optimized during model training through backpropagation, ASB requires careful consideration of data sources, model architecture, and deployment strategies. We implement attention mechanisms for improved input processing and use legal open-source data and secure web-search APIs to help mitigate ASB."
+## External Interactions (The Kitchen Equipment)
+- **API Integrations**: Like connecting different appliances in a professional kitchen
+- **Automated Workflows**: Similar to using a stand mixer for consistent results
+- **Real-Time Decision Making**: Like adjusting oven temperature while baking
 
- [One way to align AI against ASB](https://www.aamc.org/about-us/mission-areas/medical-education/principles-ai-use)
+## Interaction Interface (The Cake Filling)
+- **Multi-Modal Support**: Like different layers of filling - cream, fruit, and chocolate
+- **User Input Processing**: Like following customer specifications for custom cakes
+- **Personalization**: Adjusting flavors and decorations to individual taste
+
+## Ethics & Safety (The Quality Control)
+- **Privacy Protection**: Like keeping secret recipes safe
+- **Bias Detection**: Testing for balanced flavors and proper texture
+- **Harm Prevention**: Ensuring ingredients are fresh and allergen-free
+
+## Knowledge Base (The Recipe Collection)
+- **Contextualization & Retrieval**: Like knowing which recipes work for different occasions
+- **Structured & Unstructured Data**: Organized recipes and cooking intuition
+- **Domain-Specific Enrichment**: Specializing in specific types of baking
+
+## RAG (The Essential Ingredients)
+- **Fact-Checking**: Like measuring ingredients precisely for consistent results
+
+## The Model (LLM/SMM/SLM/LSM) (The Basic Cake Batter)
+- **Reasoning & Adaptability**: Like how basic batter can become different cakes
+- **Generative Capabilities**: Transforming raw ingredients into finished cakes
+- **Real-Time Data Retrieval**: Gathering fresh ingredients as needed
+- **Contextual Augmentation**: Adding flavors and textures to enhance the base
+- **Training & Fine-Tuning**: Perfecting the recipe through multiple iterations
+
+## Q: How do you mitigate against bias?
+## A: "We delineate between mathematical bias (MB) - a fundamental parameter in neural network equations - and algorithmic/social bias (ASB). While MB is optimized during model training through backpropagation, ASB requires careful consideration of data sources, model architecture, and deployment strategies. We implement attention mechanisms for improved input processing and use legal open-source data and secure web-search APIs to help mitigate ASB."
+
+ [AAMC AI Guidelines | One way to align AI against ASB](https://www.aamc.org/about-us/mission-areas/medical-education/principles-ai-use)
 
  ## MB at a glance
 
 ```bash
-$y = w_1x_1 + w_2x_2 + ... + w_nx_n + b$
+## Forward Propagation Algorithm
+\[y = w_1x_1 + w_2x_2 + ... + w_nx_n + b\]
 
 Where:
-$y$ represents the model output
-$(x_1, x_2, ..., x_n)$ are input features
-$(w_1, w_2, ..., w_n)$ are feature weights
-$b$ is the bias term
+- \(y\) represents the model output
+- \((x_1, x_2, ..., x_n)\) are input features
+- \((w_1, w_2, ..., w_n)\) are feature weights
+- \(b\) is the bias term
 ```
+
+## Neural Network Activation
+
+```bash
 For neural networks, the bias term is incorporated before activation:
 
-```bash
-$ z = \sum_{i=1}^{n} w_ix_i + b $$
-$ a = \sigma(z) $$
+\[z = \sum_{i=1}^{n} w_ix_i + b\]
+\[a = \sigma(z)\]
 
 Where:
-- $ z $ is the weighted sum plus bias
-- $ a $ is the activation output
-- $ \sigma $ is the activation function
+- \(z\) is the weighted sum plus bias
+- \(a\) is the activation output
+- \(\sigma\) is the activation function
 ```
 
-The attention mechanism equation is:
+## Attention Mechanism
 
 ```bash
-$ \text{Attention}(Q,K,V) = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V $$
+The attention mechanism equation is:
+
+\[\text{Attention}(Q,K,V) = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V\]
 
 Where:
-- $ Q $ represents Query matrix
-- $ K $ represents Key matrix
-- $ V $ represents Value matrix
-- $ d_k $ is the dimension of the key vectors
-- $ \text{softmax}(\cdot) $ normalizes scores to sum to 1
+- \(Q\) represents Query matrix
+- \(K\) represents Key matrix
+- \(V\) represents Value matrix
+- \(d_k\) is the dimension of the key vectors
+- \(\text{softmax}(\cdot)\) normalizes scores to sum to 1
 ```
 
 # How is it $0 cost?
-* We self-host models and we thoughtfully implement open source software and write our own code. All hardware was already purchased prior to the grant being awarded.
 
-# Do I have to buy a Linux computer to use this? I don't have time for that!
-* No. You can run Linux and/or the tools we share alongside your existing operating system:
+* We self-host models and we thoughtfully implement open source software and write our own code. All hardware was already purchased prior to the grant being awarded.
+* We public-source the code-bases under dual-license at no cost to learners or educators.
+* We make efficient use of our free memberships to the NVIDIA, Meta, Groq, and Github developer programs
+
+## Q: Do I have to buy a Linux computer to use this? I don't have time for that!
+## A: No. You can run Linux and/or the tools we share alongside your existing operating system:
     * Windows users can use Windows Subsystem for Linux [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
     * Mac users can use [Homebrew](https://brew.sh/)
     * The code-base instructions were developed with both beginners and advanced users in mind.
+
+## Q: Do you have to get a masters in AI?
+##A: No. To get competent enough to get past ChatGPT, you just need a computer and a beginning's mindset. Huggingface is a good place to start. 
+* [Huggingface](https://docs.google.com/presentation/d/1IkzESdOwdmwvPxIELYJi8--K3EZ98_cL6c5ZcLKSyVg/edit#slide=id.p)
