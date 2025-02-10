@@ -7,6 +7,9 @@ Matthew A. Porter, BSc<sup>1</sup>, Ariana Rowshan, BA<sup>2</sup>, Dawn L. Lapo
 <sup>1</sup>Qompass AI, Spokane, WA  
 <sup>2</sup>The Johns Hopkins University School of Medicine, Department of Orthopaedic Surgery, Baltimore, MD
 
+[2025 RJOS Poster](./r4r.pptx)
+
+
 ## Abstract
 ### Background
 The rapid integration of generative artificial intelligence (genAI) into medical education has ushered in transformative changes, offering innovative tools and methodologies that enhance learning and practice. AI applications, such as adaptive learning platforms and virtual patient simulations, have become increasingly prevalent, providing personalized and immersive educational experiences. These advancements not only improve educational outcomes but also address critical needs across diverse learner populations. 
@@ -46,7 +49,7 @@ In response to noticeably increasing cost of AI medical education, our study foc
 ## **AI As Cake From Top to Bottom**
 
 **Referencing the left most image in the poster**
-
+[2025 RJOS Poster](./r4r.pptx)
 ### Governance & Auditability (The Decorative Frosting)
 - **Transparent Decision Logs**: Like a recipe book recording each step of the baking process
 - **Regulatory Compliance**: Following food safety standards and baking regulations
