@@ -45,6 +45,8 @@ In response to noticeably increasing cost of AI medical education, our study foc
 
 ## **AI As Cake From Top to Bottom**
 
+**Referencing the left most image in the poster**
+
 ### Governance & Auditability (The Decorative Frosting)
 - **Transparent Decision Logs**: Like a recipe book recording each step of the baking process
 - **Regulatory Compliance**: Following food safety standards and baking regulations
@@ -86,12 +88,14 @@ In response to noticeably increasing cost of AI medical education, our study foc
 - **Training & Fine-Tuning**: Perfecting the recipe through multiple iterations
 
 ### Q: How do you mitigate against bias?
-### A: "We delineate between mathematical bias (MB) - a fundamental parameter in neural network equations - and algorithmic/social bias (ASB). While MB is optimized during model training through backpropagation, ASB requires careful consideration of data sources, model architecture, and deployment strategies. We implement attention mechanisms for improved input processing and use legal open-source data and secure web-search APIs to help mitigate ASB."
+
+**TLDR - we do math to make AI ethically useful**
+
+### A: We delineate between mathematical bias (MB) - a fundamental parameter in neural network equations - and algorithmic/social bias (ASB). While MB is optimized during model training through backpropagation, ASB requires careful consideration of data sources, model architecture, and deployment strategies. We implement attention mechanisms for improved input processing and use legal open-source data and secure web-search APIs to help mitigate ASB. 
 
  [AAMC AI Guidelines | One way to align AI against ASB](https://www.aamc.org/about-us/mission-areas/medical-education/principles-ai-use)
 
  ### AI Math at a glance
-
 
 ## Forward Propagation Algorithm
 
@@ -125,7 +129,10 @@ Where:
 - $\sigma$ is the activation function
 
 
-### Attention Mechanism
+### Attention Mechanism- aka what makes the Transformer (The "T" in ChatGPT) powerful
+
+[Attention High level overview video](https://www.youtube.com/watch?v=fjJOgb-E41w)
+[Attention Is All You Need Arxiv Paper](https://arxiv.org/abs/1706.03762)
 
 The attention mechanism equation is:
 
@@ -140,12 +147,11 @@ Where:
 - $V$ represents the Value matrix
 - $d_k$ is the dimension of the key vectors
 - $\text{softmax}(\cdot)$ normalizes scores to sum to 1
-```
 
 ### How is it $0 cost?
 
 * We self-host models and we thoughtfully implement open source software and write our own code. All hardware was already purchased prior to the grant being awarded.
-* We public-source the code-bases under dual-license at no cost to learners or educators not intending on enterprise-grade commercial use.
+* We public-source the code-bases under dual-license at no cost to learners or educators not intending on enterprise-grade commercial use. We make $0 in public-sourcing our code.
 * We make efficient use of our free memberships to the NVIDIA, Meta, Groq, and Github developer programs
 
 ### Q: Do I have to buy a Linux computer to use this? I don't have time for that!
@@ -155,5 +161,5 @@ Where:
     * The code-base instructions were developed with both beginners and advanced users in mind.
 
 ### Q: Do you have to get a masters in AI?
-### A: No. To get competent enough to get past ChatGPT, you just need a computer and a beginning's mindset. Huggingface is a good place to start. 
+### A: Not if you don't want to. To get competent enough to get past ChatGPT dependence at least, you just need a computer and a beginning's mindset. Huggingface is a good place to start. 
 * [Huggingface](https://docs.google.com/presentation/d/1IkzESdOwdmwvPxIELYJi8--K3EZ98_cL6c5ZcLKSyVg/edit#slide=id.p)
