@@ -91,7 +91,7 @@ In response to noticeably increasing cost of AI medical education, our study foc
 ### Retrieval Augmented Generation (RAG) (The Essential Ingredients)
 - **Fact-Checking**: Like measuring ingredients precisely for consistent results
 
-### The Model (LLM/SMM/SLM/LSM) (The Basic Cake Batter)
+### The Model (LLM/SMM/SLM/LMM) (The Basic Cake Batter)
 - **Reasoning & Adaptability**: Like how basic batter can become different cakes
 - **Generative Capabilities**: Transforming raw ingredients into finished cakes
 - **Real-Time Data Retrieval**: Gathering fresh ingredients as needed
