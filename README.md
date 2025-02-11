@@ -1,4 +1,4 @@
-# The Responsible Open Science Engine: Powering Minimally Invasive AI for Mentorship
+# The Responsible Open Science Engines: Powering Minimally Invasive AI for Mentorship
 
 ## Authors
 Matthew A. Porter, BSc<sup>1</sup>, Ariana Rowshan, BA<sup>2</sup>, Dawn L. Laporte, MD<sup>2</sup>, Amiethab A. Aiyer, MD<sup>2</sup>
