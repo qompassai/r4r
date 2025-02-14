@@ -1,4 +1,4 @@
-# The Responsible Open Science Engine: Powering Minimally Invasive AI for Mentorship
+# The Responsible Open Science Engines: Powering Minimally Invasive AI for Mentorship
 
 ## Authors
 Matthew A. Porter, BSc<sup>1</sup>, Ariana Rowshan, BA<sup>2</sup>, Dawn L. Laporte, MD<sup>2</sup>, Amiethab A. Aiyer, MD<sup>2</sup>
@@ -19,7 +19,7 @@ However, the swift adoption of AI technologies has highlighted significant ethic
 
 
 ### Methods
-In response to noticeably increasing cost of AI medical education, our study focuses on the deployment of quantized, small-scale AI models on-device. This approach aims to ensure accessibility and equity, particularly for underfunded institutions and learners from non-traditional, disabled, and underrepresented minority populations. We began by selecting open-source AI models renowned for their efficacy in educational contexts. To optimize these models for deployment on resource-constrained hardware, we employed quantization techniques, which reduce the precision of the model's parameters, thereby decreasing memory usage and computational demands without significantly compromising performance. Our deployment environment comprised consumer-grade Linux computers, reflecting hardware commonly available in underserved regions. We utilized standard Linux distributions, ensuring all software dependencies were met. To enhance computational efficiency, we leveraged NVIDIA's Compute Unified Device Architecture (CUDA 12.8) for on-device acceleration, enabling the models to utilize available GPU resources. The quantized models were integrated into the system in transient sandboxed environments as well as via hard-coded web-based application program interfaces (APIs)  to streamline deployment and ensure consistency across various infrastructures.
+In response to noticeably increasing cost of AI medical education, our study focuses on the deployment of quantized, small-scale AI models on-device. This approach aims to ensure accessibility and equity, particularly for underfunded institutions and learners from non-traditional, disabled, and underrepresented minority populations. We began by selecting open-source AI models renowned for their efficacy in educational contexts. To optimize these models for deployment on resource-constrained hardware, we employed quantization techniques, which reduce the precision of the model's parameters, thereby decreasing memory usage and computational demands without significantly compromising performance. Our deployment environment comprised consumer-grade Linux computers, reflecting hardware commonly available in industry and increasingly academia. We utilized standard Linux distributions, ensuring all software dependencies were met. To enhance computational efficiency, we leveraged NVIDIA's Compute Unified Device Architecture (CUDA 12.8) for on-device acceleration, enabling the models to utilize available GPU resources. The quantized models were integrated into the system in transient sandboxed environments as well as via hard-coded web-based application program interfaces (APIs)  to streamline deployment and ensure consistency across various infrastructures.
 
 
 ### Results
@@ -44,13 +44,13 @@ In response to noticeably increasing cost of AI medical education, our study foc
 
 [Ollie | Small Multimodal Model with Web Search Tool Calling](https://www.youtube.com/watch?v=OvxrfwC3CKY&t=9s)
 
-[Valle | SMM for MultiLingual Patient Education](https://www.youtube.com/watch?v=q-2EL-ajNKc&t=8s)
+[Vale | SMM for MultiLingual Patient Education](https://www.youtube.com/watch?v=q-2EL-ajNKc&t=8s)
 
 
 # FAQ
 
 ### Q: How would you describe AI to someone who's "not technical"?
-### A: We dislike identifying people as technical or not technical. This sort of language language is othering and unkind. AI is like cake, not all cakes are created equal, but they can all be great in their own ways. Yann LeCun, Turing Award winner, Meta's Chief AI Scientist and a professor at NYU simplified the complex world of AI by comparing it to a layered cake. We endeavor to do the same :)
+### A: We dislike identifying people as technical or not technical. This sort of language is othering and unkind. AI is like cake, not all cakes are created equal, but they can all be great in their own ways. Yann LeCun, Turing Award winner, Meta's Chief AI Scientist and a professor at NYU simplified the complex world of AI by comparing it to a layered cake. We endeavor to do the same :)
 
 ## **AI As Cake From Top to Bottom**
 
@@ -91,7 +91,7 @@ In response to noticeably increasing cost of AI medical education, our study foc
 ### Retrieval Augmented Generation (RAG) (The Essential Ingredients)
 - **Fact-Checking**: Like measuring ingredients precisely for consistent results
 
-### The Model (LLM/SMM/SLM/LSM) (The Basic Cake Batter)
+### The Model (LLM/SMM/SLM/LMM) (The Basic Cake Batter)
 - **Reasoning & Adaptability**: Like how basic batter can become different cakes
 - **Generative Capabilities**: Transforming raw ingredients into finished cakes
 - **Real-Time Data Retrieval**: Gathering fresh ingredients as needed
