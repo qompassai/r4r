@@ -1,21 +1,41 @@
 {
-  "title": "r4r",
-  "description": "The Responsible Open Science Engine",
+  "title": "The Responsible Open Science Engine",
+  "description": "Powering Minimally Invasive AI for Mentorship",
   "license": ["AGPL-3.0", "Q-CDA"],
   "upload_type": "software",
   "access_right": "open",
-  "version": "1.0.0",
+  "version": "2025.02.17",
   "creators": [
     {
       "name": "Porter, Matthew A.",
       "affiliation": "Qompass AI",
       "orcid": "0000-0002-0302-4812"
+    },
+    {
+      "name": "Rowshan, Ariana",
+      "affiliation": "The Johns Hopkins University School of Medicine, Department of Orthopaedic Surgery"
+    },
+    {
+      "name": "Hill, Marcheta J.",
+      "affiliation": "Arnot Ogden Medical Center Emergency Medicine Residency Program"
+    },
+    {
+      "name": "Laporte, Dawn L.",
+      "affiliation": "The Johns Hopkins University School of Medicine, Department of Orthopaedic Surgery"
+    },
+    {
+      "name": "Aiyer, Amiethab A.",
+      "affiliation": "The Johns Hopkins University School of Medicine, Department of Orthopaedic Surgery"
     }
   ],
   "keywords": [
     "AI",
     "MedEd",
-    "Multimodal"
+    "Multimodal",
+    "Mentorship",
+    "Medical Education",
+    "Artificial Intelligence"
   ]
 }
+
 
