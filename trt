@@ -1,0 +1,33 @@
+
+* Increasing SMM Efficiency
+
+
+Using consumer-grade hardware to improve a small ONNX model for the inference task of video background removal:
+
+\[
+\text{trtexec --onnx=BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx --saveEngine=BiRefNet-general.trt --fp16 --memPoolSize=workspace:4096 --verbose --useCudaGraph --useSpinWait --noDataTransfers --builderOptimizationLevel=5 --tilingOptimizationLevel=3 --profilingVerbosity=detailed --exportTimes=timing.json --exportProfile=profile.json --exportLayerInfo=layers.json --separateProfileRun --avgRuns=100 --persistentCacheRatio=1.0 --maxAuxStreams=4 --warmUp=500 --duration=60 --iterations=100 --device=0}
+\]
+
+\[
+\text{trtexec --onnx=isnet-anime.onnx --saveEngine=BiRefNet-general.trt --fp16 --memPoolSize=workspace:4096 --verbose --useCudaGraph --useSpinWait --builderOptimizationLevel=5 --tilingOptimizationLevel=3 --profilingVerbosity=detailed --exportTimes=timing.json --exportProfile=profile.json --exportLayerInfo=layers.json --separateProfileRun --avgRuns=100 --persistentCacheRatio=1.0 --maxAuxStreams=4 --warmUp=500 --duration=60 --iterations=100 --device=0 --exposeDMA  --timeDeserialize --timeRefit}
+\]
+
+Where:
+- \texttt{--onnx} represents the input ONNX model path
+- \texttt{--saveEngine} specifies the output TensorRT engine path
+- \texttt{--fp16} enables half-precision floating point optimization
+- \texttt{--memPoolSize} allocates workspace memory in MiB
+- \texttt{--builderOptimizationLevel} sets optimization level (1-5)
+- \texttt{--tilingOptimizationLevel} configures tiling optimization (0-4)
+- \texttt{--avgRuns} defines the number of inference runs for averaging
+- \texttt{--warmUp} specifies warm-up iterations before timing
+- \texttt{--duration} sets profiling duration in seconds
+- \texttt{--iterations} defines the number of inference iterations
+- \texttt{--maxAuxStreams} configures concurrent CUDA streams
+- \texttt{--persistentCacheRatio} sets cache persistence (0-1)
+- \texttt{--exposeDMA enables the exposure of Direct Memory Access (DMA) for performance.
+- \texttt{--timeDeserialize enables timing measurement for engine deserialization.
+- \texttt{--timeRefit enables timing for the engine refitting process.
+
+Run with TensorRT 10.8, CUDA 12.8, nvidia-open-dkms on x86_64
+
