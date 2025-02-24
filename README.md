@@ -46,6 +46,8 @@ In response to noticeably increasing cost of AI medical education, our study foc
 
 [Vale | SMM for MultiLingual Patient Education](https://www.youtube.com/watch?v=q-2EL-ajNKc&t=8s)
 
+
+
 * Increasing SMM Efficiency
 
 
@@ -53,6 +55,10 @@ Using consumer-grade hardware to improve a small ONNX model for the inference ta
 
 \[
 \text{trtexec --onnx=BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx --saveEngine=BiRefNet-general.trt --fp16 --memPoolSize=workspace:4096 --verbose --useCudaGraph --useSpinWait --noDataTransfers --builderOptimizationLevel=5 --tilingOptimizationLevel=3 --profilingVerbosity=detailed --exportTimes=timing.json --exportProfile=profile.json --exportLayerInfo=layers.json --separateProfileRun --avgRuns=100 --persistentCacheRatio=1.0 --maxAuxStreams=4 --warmUp=500 --duration=60 --iterations=100 --device=0}
+\]
+
+\[
+\text{trtexec --onnx=isnet-anime.onnx --saveEngine=BiRefNet-general.trt --fp16 --memPoolSize=workspace:4096 --verbose --useCudaGraph --useSpinWait --builderOptimizationLevel=5 --tilingOptimizationLevel=3 --profilingVerbosity=detailed --exportTimes=timing.json --exportProfile=profile.json --exportLayerInfo=layers.json --separateProfileRun --avgRuns=100 --persistentCacheRatio=1.0 --maxAuxStreams=4 --warmUp=500 --duration=60 --iterations=100 --device=0 --exposeDMA  --timeDeserialize --timeRefit}
 \]
 
 Where:
@@ -68,8 +74,12 @@ Where:
 - \texttt{--iterations} defines the number of inference iterations
 - \texttt{--maxAuxStreams} configures concurrent CUDA streams
 - \texttt{--persistentCacheRatio} sets cache persistence (0-1)
+- \texttt{--exposeDMA enables the exposure of Direct Memory Access (DMA) for performance.
+- \texttt{--timeDeserialize enables timing measurement for engine deserialization.
+- \texttt{--timeRefit enables timing for the engine refitting process.
 
 Run with TensorRT 10.8, CUDA 12.8, nvidia-open-dkms on x86_64
+
 
 # FAQ
 
