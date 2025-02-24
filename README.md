@@ -1,11 +1,11 @@
 # The Responsible Open Science Engines: Powering Minimally Invasive AI for Mentorship
 
 ## Authors
-Matthew A. Porter, BSc<sup>1</sup>, Ariana Rowshan, BA<sup>2</sup>, Dawn L. Laporte, MD<sup>2</sup>, Amiethab A. Aiyer, MD<sup>2</sup>
+Matthew A. Porter, BSc<sup>1</sup>, Ariana Rowshan, BA<sup>2</sup>, Marcheta J. Hill, DO<sup>3<sup>, Dawn L. Laporte, MD<sup>2</sup>, Amiethab A. Aiyer, MD<sup>2</sup>
 
 <sup>1</sup>Qompass AI, Spokane, WA  
 <sup>2</sup>The Johns Hopkins University School of Medicine, Department of Orthopaedic Surgery, Baltimore, MD
-
+<sup>3</sup>Arnot Ogden Medical Center Emergency Medicine Residency Program, Elmira, NY  
 # 2025 RJOS Poster
 
 [View Presentation](https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/qompassai/r4r/main/r4r.pptx)
@@ -46,6 +46,30 @@ In response to noticeably increasing cost of AI medical education, our study foc
 
 [Vale | SMM for MultiLingual Patient Education](https://www.youtube.com/watch?v=q-2EL-ajNKc&t=8s)
 
+* Increasing SMM Efficiency
+
+
+Using consumer-grade hardware to improve a small ONNX model for the inference task of video background removal:
+
+\[
+\text{trtexec --onnx=BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx --saveEngine=BiRefNet-general.trt --fp16 --memPoolSize=workspace:4096 --verbose --useCudaGraph --useSpinWait --noDataTransfers --builderOptimizationLevel=5 --tilingOptimizationLevel=3 --profilingVerbosity=detailed --exportTimes=timing.json --exportProfile=profile.json --exportLayerInfo=layers.json --separateProfileRun --avgRuns=100 --persistentCacheRatio=1.0 --maxAuxStreams=4 --warmUp=500 --duration=60 --iterations=100 --device=0}
+\]
+
+Where:
+- \texttt{--onnx} represents the input ONNX model path
+- \texttt{--saveEngine} specifies the output TensorRT engine path
+- \texttt{--fp16} enables half-precision floating point optimization
+- \texttt{--memPoolSize} allocates workspace memory in MiB
+- \texttt{--builderOptimizationLevel} sets optimization level (1-5)
+- \texttt{--tilingOptimizationLevel} configures tiling optimization (0-4)
+- \texttt{--avgRuns} defines the number of inference runs for averaging
+- \texttt{--warmUp} specifies warm-up iterations before timing
+- \texttt{--duration} sets profiling duration in seconds
+- \texttt{--iterations} defines the number of inference iterations
+- \texttt{--maxAuxStreams} configures concurrent CUDA streams
+- \texttt{--persistentCacheRatio} sets cache persistence (0-1)
+
+Run with TensorRT 10.8, CUDA 12.8, nvidia-open-dkms on x86_64
 
 # FAQ
 
