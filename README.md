@@ -55,7 +55,7 @@ TLDR: Using consumer-grade hardware to improve small Open Neural Network Exchang
 **BiRefNet-general-bb_swin_v1_tiny-epoch_232**
 
 ```bash
-#  BiRefNet is capable of handling background removal tasks for images and videos via efficient inference on-devices. It uses advanced neural network architectures like Swin Transformer.
+# BiRefNet is capable of handling background removal tasks for images and videos via efficient inference on-devices. It uses advanced neural network architectures like Swin Transformer.
 
 trtexec --onnx=BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx --saveEngine=BiRefNet-general.trt --fp16 --memPoolSize=workspace:4096 --verbose --useCudaGraph --useSpinWait --noDataTransfers --builderOptimizationLevel=5 --tilingOptimizationLevel=3 --profilingVerbosity=detailed --exportTimes=timing.json --exportProfile=profile.json --exportLayerInfo=layers.json --separateProfileRun --avgRuns=100 --persistentCacheRatio=1.0 --maxAuxStreams=4 --warmUp=500 --duration=60 --iterations=100 --device=0}
 ```
@@ -63,7 +63,7 @@ trtexec --onnx=BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx --saveEngine=BiRe
 **Isnet-anime**
 
 ```bash
-#Isnet-anime is optimized specifically to detect and remove backgrounds in scenarios involving anime or secondary characters. This makes it ideal for artistic or creative projects where the input data involves stylized or animated visuals.
+# Isnet-anime is optimized specifically to detect and remove backgrounds in scenarios involving anime or secondary characters. This makes it ideal for artistic or creative projects where the input data involves stylized or animated visuals.
 
 trtexec --onnx=isnet-anime.onnx --saveEngine=BiRefNet-general.trt --fp16 --memPoolSize=workspace:4096 --verbose --useCudaGraph --useSpinWait --builderOptimizationLevel=5 --tilingOptimizationLevel=3 --profilingVerbosity=detailed --exportTimes=timing.json --exportProfile=profile.json --exportLayerInfo=layers.json --separateProfileRun --avgRuns=100 --persistentCacheRatio=1.0 --maxAuxStreams=4 --warmUp=500 --duration=60 --iterations=100 --device=0 --exposeDMA  --timeDeserialize --timeRefit}
 ```
